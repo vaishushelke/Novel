@@ -1,0 +1,174 @@
+/* =========================
+   AUTH PAGE
+========================= */
+
+.auth-container {
+    width: 380px;
+    margin: 70px auto;
+    padding: 35px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.12);
+    text-align: center;
+}
+
+.auth-container h2 {
+    margin-bottom: 25px;
+    color: #222;
+    font-size: 28px;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.auth-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+/* =========================
+   INPUTS
+========================= */
+
+.auth-container input,
+.auth-container select {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 15px;
+    outline: none;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.auth-container input:focus,
+.auth-container select:focus {
+    border-color: #6c5ce7;
+    box-shadow: 0 0 5px rgba(108, 92, 231, 0.2);
+}
+
+
+/* =========================
+   AUTH BUTTON
+========================= */
+
+.auth-container button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 7px;
+    background: #6c5ce7;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.auth-container button:hover {
+    background: #5848d6;
+    transform: translateY(-1px);
+}
+
+
+/* =========================
+   OTP
+========================= */
+
+.auth-container .otp-input {
+    text-align: center;
+    letter-spacing: 8px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   TEXT
+========================= */
+
+.auth-container p {
+    color: #666;
+    font-size: 14px;
+    margin: 15px 0;
+}
+
+
+/* =========================
+   NAVBAR AUTH BUTTONS
+========================= */
+
+.login-btn,
+.register-btn,
+.logout-btn {
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+/* Login */
+
+.login-btn {
+    color: #6c5ce7;
+    border: 1px solid #6c5ce7;
+    background: white;
+}
+
+.login-btn:hover {
+    background: #6c5ce7;
+    color: white;
+}
+
+
+/* Register */
+
+.register-btn {
+    color: white;
+    background: #6c5ce7;
+    border: 1px solid #6c5ce7;
+}
+
+.register-btn:hover {
+    background: #5848d6;
+}
+
+
+/* Logout */
+
+.logout-btn {
+    color: white;
+    background: #e74c3c;
+    border: 1px solid #e74c3c;
+}
+
+.logout-btn:hover {
+    background: #c0392b;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 500px) {
+
+    .auth-container {
+        width: 90%;
+        margin: 40px auto;
+        padding: 25px;
+        box-sizing: border-box;
+    }
+
+    .auth-container h2 {
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,453 @@
+/* =========================
+   HOME
+========================= */
+
+.home {
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    color: #222;
+}
+
+
+/* =========================
+   HOME FILTER
+========================= */
+
+.home-filter {
+    padding: 50px 9%;
+    background: #f5eee6;
+}
+
+.filter-content {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+.filter-content > p {
+    color: #9b6b43;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.filter-content h2 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   FILTER ROW
+========================= */
+
+.filter-row {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter-row input,
+.filter-row select {
+    padding: 14px 16px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 6px;
+
+    background: white;
+
+    outline: none;
+
+    font-size: 14px;
+}
+
+.filter-row input {
+    width: 350px;
+}
+
+.filter-row input:focus,
+.filter-row select:focus {
+    border-color: #9b6b43;
+}
+
+.filter-row button {
+    padding: 14px 25px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #9b6b43;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 15px;
+}
+
+.filter-row button:hover {
+    background: #795332;
+}
+
+
+/* =========================
+   NOVEL SECTION
+========================= */
+
+.novel-section {
+    width: 90%;
+
+    max-width: 1250px;
+
+    margin: auto;
+
+    padding: 50px 0;
+}
+
+.novel-section h2 {
+    text-align: center;
+
+    font-size: 30px;
+
+    margin-bottom: 35px;
+
+    color: #2c3e50;
+}
+
+
+/* =========================
+   NOVEL GRID
+========================= */
+
+.novel-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 280px);
+
+    gap: 25px;
+
+    justify-content: center;
+
+    align-items: start;
+}
+
+
+/* =========================
+   NOVEL CARD
+========================= */
+
+.novel-card {
+    width: 280px;
+
+    height: 540px;
+
+    background-color: white;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+.novel-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================
+   NOVEL IMAGE
+========================= */
+
+.novel-card > img {
+    width: 100%;
+
+    height: 280px;
+
+    object-fit: cover;
+
+    display: block;
+
+    cursor: pointer;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================
+   NOVEL DETAILS
+========================= */
+
+.novel-details {
+    padding: 16px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    flex: 1;
+}
+
+.novel-details h3 {
+    font-family: Georgia, serif;
+
+    font-size: 19px;
+
+    margin: 0 0 7px;
+
+    color: #222;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+
+/* =========================
+   AUTHOR
+========================= */
+
+.author {
+    color: #777;
+
+    font-size: 14px;
+
+    margin: 0 0 8px;
+}
+
+
+/* =========================
+   CATEGORY
+========================= */
+
+.category {
+    display: inline-block;
+
+    width: fit-content;
+
+    color: #9b6b43;
+
+    background: #f5eee6;
+
+    padding: 4px 8px;
+
+    border-radius: 4px;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.description {
+    color: #666;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+
+    margin: 0;
+
+    display: -webkit-box;
+
+    -webkit-line-clamp: 3;
+
+    -webkit-box-orient: vertical;
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   PRICE + STOCK
+========================= */
+
+.novel-bottom {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: auto;
+
+    margin-bottom: 12px;
+}
+
+.price {
+    font-size: 19px;
+
+    font-weight: bold;
+
+    color: #222;
+}
+
+.stock {
+    font-size: 12px;
+
+    color: #777;
+
+    text-align: right;
+}
+
+
+/* =========================
+   CART BUTTON
+========================= */
+
+.cart-btn {
+    width: 100%;
+
+    padding: 11px 15px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #9b6b43;
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.cart-btn:hover {
+    background: #795332;
+}
+
+.cart-btn:disabled {
+    background: #aaa;
+
+    cursor: not-allowed;
+}
+
+
+/* =========================
+   LOADING
+========================= */
+
+.loading {
+    min-height: 300px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+}
+
+
+/* =========================
+   ERROR
+========================= */
+
+.error {
+    min-height: 300px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 15px;
+
+    text-align: center;
+}
+
+.error button {
+    padding: 10px 20px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background: #9b6b43;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1250px) {
+
+    .novel-grid {
+        grid-template-columns: repeat(3, 280px);
+    }
+}
+
+
+@media (max-width: 950px) {
+
+    .novel-grid {
+        grid-template-columns: repeat(2, 280px);
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    .filter-row {
+        flex-direction: column;
+    }
+
+    .filter-row input {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .filter-row select,
+    .filter-row button {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .novel-grid {
+        grid-template-columns: 280px;
+    }
+
+    .novel-card {
+        width: 280px;
+    }
+}
